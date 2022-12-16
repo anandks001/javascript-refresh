@@ -10,10 +10,12 @@ jobs:
       matrix:
         os:
           - ubuntu-20.04
-
+          - windows-2022
+          - macos-11
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Print OS name
         shell: bash
         run: |
-          echo "$RUNNER_OS"
           echo "$system"
+
