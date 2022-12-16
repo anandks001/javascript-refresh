@@ -18,3 +18,4 @@ jobs:
         shell: bash
         run: |
           echo "$RUNNER_OS"
+          echo "system.osName"
